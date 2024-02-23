@@ -1,0 +1,18 @@
+<div class="weather-block">
+    <h1>Weather in {{weather.location.name}}</h1>
+    <img src="{{weather.current.condition.icon}}">
+    <table>
+        <tr>
+            <td>Temperature</td>
+            <td>{{weather.current.temp_c}} &#xb0;C</td>
+        </tr>
+        <tr>
+            <td>Wind</td>
+            <td>{{weather.current.wind_kph}} km/h</td>
+        </tr>
+        <tr>
+            <td>Humidity</td>
+            <td>{{weather.current.humidity}}%</td>
+        </tr>
+    </table>
+</div>

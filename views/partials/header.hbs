@@ -1,0 +1,11 @@
+<header>
+    <a href="/home">Weather Center</a>
+    <input type="text" placeholder="City" id="serach-input">
+</header>
+<script>
+    document.querySelector("#serach-input").addEventListener('keyup', (e) => {
+        if (e.key === 'Enter' || e.keyCode === 13) {
+            window.location.href = `/weather/${e.target.value}`;
+        }
+    });
+</script>
